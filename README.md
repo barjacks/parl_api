@@ -1,31 +1,17 @@
-# Presentation for Publizistische Konferenz
-Datetime: 2016-12-01 16:15 – 2016-12-01 16:45 <br />
-Location: Werdstrasse 21, 8004 Zürich, Presseclub, 6. Stock, 47.37269, 8.53096 <br />
-Presenter: Barnaby Skinner, Mathias Born, Paul Ronga <br />
+# Working with the API of Swiss parliament
 
-## Introduction Lede 12 (3 min.)
-Each of us presents himself and gives a statement about why Lede was a valuable experience. <br />
+Swiss parliament offers a real time service on how the representatives of the
+Nationalrat vote, this is the equivalent of the House of Representatives in the
+US. The API information also contains details on which commissions the
+politicians belong to, how old they are, how many children they have, and
+much more.
 
-## Collecting data (7 min.)
-Intro (Barnaby Skinner, 1 min.)<br />
-01 Structured data from site e.g. Parlament.ch, BFS, etc. (Barnaby Skinner, 2 min.)<br />
-02 Scraping (Mathias Born, 2 min.)<br />
-03 Even more structured: APIs (perfectly structured data) (Paul Ronga, 2 min.)
+This service [is here](http://ws-old.parlament.ch/) and it is provided by
+[Smartvote](http://smartmonitor.ch/).
 
-## Analysing data (7 min.)
-Intro (Paul Ronga, 1 min.)<br />
-04 Python & Regex for unstructured data (Mathias Born, 2 min.)<br />
-05 Pandas for structured data (Barnaby Skinner, 2 min.)<br />
-06 Working with APIs and live data (Paul Ronga, 2 min.)
+For this article in the SonntagsZeitung: ["Der Rechtsrutsch war nur ein Rütschlein"](https://github.com/barjacks/parl_api/blob/master/20161225_0_0_6.pdf),
+published on December 25 2016. This article shows that parliament isn't leaning as
+far right as many predicted after the elections in October 2015.
 
-## Using data for story-telling (7 min.)
-Intro (Mathias Born, 1 min.)<br />
-07 Static visuals (Mathias Born, 2 min.)<br />
-08 Basis of an investigation (Barnaby Skinner, 2 min.)<br />
-09 Interactive visuals with D3.js: the singles! (Paul Ronga, 2 min.)
-
-## Examples (7 min.)
-Intro (Barnaby Sinner, 1 Min)<br />
-10 Footballer or Stadtrat (Mathias Born, 2 min.)<br />
-11 Course de l’Escalade (or propriete.tdg.ch) (Paul Ronga, 2 min.)<br />
-12 Asylentscheide (Barnaby Skinner, 2 min.)
+[This first notebook](https://github.com/barjacks/parl_api/blob/master/Dealing%20with%20the%20Parlament%20API.ipynb) pulls in all the relevant affairs that were discussed and voted on since 2001. The data files only take into consideration votes made of the current term and compares them to the first six sessions of the last term.
+[This second notebook](https://github.com/barjacks/parl_api/blob/master/API%2049%20%26%2050.%20Leg%20comp..ipynb) molds and analyses this data.
