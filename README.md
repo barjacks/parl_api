@@ -3,7 +3,7 @@
 ## 1 Introduction
 Swiss parliament offers a real time service on how the representatives of the Nationalrat vote, this is the equivalent of the House of Representatives in the US. The API information also contains details on which commissions the politicians belong to, how old they are, how many children they have, and much more.
 
-## 2 What is the API?
+## 2 How does the API work?
 This service [is here](http://ws-old.parlament.ch/) and it's provided by [Smartvote](http://smartmonitor.ch/). The here's the [documentation](https://www.parlament.ch/centers/documents/de/kurzdokumentation-webservices-d.pdf)].
 
 ## 3 Article
